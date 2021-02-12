@@ -1,0 +1,26 @@
+<div class="container mt-5 p-5">
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <h1 class="sub-heading">All Mobiles</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-5" *ngFor="let mobile of mobileDesc">
+            <mat-card class="example-card text-center p-4">
+                <img mat-card-image class="img-fluid" src="{{mobile.imgUrl}}" alt="{{mobile.brand}} Mobile Photo" style="max-height: 260px;">
+                <mat-card-header  class="dflex justify-content-center">
+                    <h3 class="pr-4">{{mobile.brand}}</h3>
+                  </mat-card-header>
+                <mat-card-content>
+                  <p>
+                    {{mobile.description}}
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>Add to Wishlist</button>
+                  <button mat-button>Add to Cart</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+    </div>
+</div>

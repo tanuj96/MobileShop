@@ -1,0 +1,29 @@
+<nav class="navigation-top navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand brand-name" href="#">MobileShop |</a>
+  <div class="logger-detail">
+    <a mat-button *ngIf="user" [matMenuTriggerFor]="menu">
+      <mat-icon>account_circle</mat-icon><span>{{user.firstname}} {{user.lastname}}</span>
+    </a>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class=" navigation-links collapse navbar-collapse mr-5" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item mr-3">
+        <a routerLink="/home" routerLinkActive="active-link">Home </a>
+      </li>
+      <li class="nav-item mr-3">
+        <a routerLink="/products" routerLinkActive="active-link">Products</a>
+      </li>
+      <li class="nav-item mr-3">
+        <a routerLink="/login" routerLinkActive="active-link">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>

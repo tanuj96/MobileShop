@@ -1,0 +1,34 @@
+.navigation-top {
+    background: transparent;
+}
+
+.logger-detail a,
+.logger-detail mat-icon {
+    text-decoration: none;
+    color          : var(--global-font-color-dark);
+    font-size      : 1.5rem;
+}
+
+.brand-name {
+    font-family: var(--global-font-family-head);
+    color      : var(--global-font-color-dark);
+    font-size  : 2.5rem;
+}
+
+.navigation-links a {
+    font-family: var(--global-font-family-main);
+    color      : var(--global-font-color-dark);
+    font-size  : 1.5rem;
+}
+
+.user-button {
+    color    : var(--global-font-color-dark);
+    font-size: 2rem;
+}
+
+.active-link {
+    text-decoration      : underline;
+    text-decoration-style: double;
+    font-weight          : bolder;
+    color                : var(--global-font-color-dark);
+}
